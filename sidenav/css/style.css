@@ -1,0 +1,281 @@
+/* SideNav.css by Mohamed Abo El-Ghranek */
+/* For Demo only */
+* {
+margin:0;
+padding:0;
+outline:0;
+transition:all .5s ease;
+-webkit-transition:all .5s ease;
+-moz-transition:all .5s ease;
+-o-transition:all .5s ease;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var {
+padding:0;
+border:0;
+outline:0;
+vertical-align:baseline;
+background:0 0
+}
+ins {
+text-decoration:underline
+}
+del {
+text-decoration:line-through
+}
+blockquote {
+background-color:#eee;
+border-top:5px solid #ff1f1f;
+padding:10px
+}
+dl,ol,ul {
+list-style-position:inside;
+font-weight:700;
+list-style:none
+}
+li {
+list-style:none
+}
+caption,th {
+text-align:center
+}
+img {
+border:none;
+position:relative
+}
+a,a:visited {
+text-decoration:none;
+font-weight:400
+}
+a {
+color:#4c96d2
+}
+a:hover {
+color:#ff1f1f
+}
+q:after,q:before {
+content:''
+}
+abbr,acronym {
+border:0
+}
+.clear {
+clear:both
+}
+::-moz-selection {
+background-color:#ff1f1f;
+color:#fff
+}
+::selection {
+background-color:#ff1f1f;
+color:#fff
+}
+body {
+  background-color: #F7F7F7;
+  color: #777;
+  font-family: "JF Flat Regular";
+  line-height: 25px;
+  font-size: 16px;
+}
+#header-wrapper, #content-wrapper {
+    margin: 30px 70px 0;
+    background-color: #FFF;
+    padding: 50px;
+    border: 1px solid #DDD;
+}
+#header-wrapper h1 {
+    text-align: center;
+    font-size: 40px;
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #ff0000;
+	padding: 35px;
+	border-radius: 5px;
+    color: #FFF;
+}
+#footer-wrapper {
+    padding: 30px 0;
+    text-align: center;
+    margin: 30px 70px;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+}
+a {
+    color: #F6BA3A;
+	text-decoration: none;
+}
+.author {
+    overflow: hidden;
+    display: block;
+    margin-bottom: 30px;
+	text-align: center;
+}
+#download {
+    overflow: hidden;
+	text-align: center;
+}
+#download a:hover {
+    background-color: #FF0000;
+    color: #FFF;
+}
+#download a {
+  background-color: #F1F1F1;
+  padding: 10px 30px;
+  display: inline-block;
+  color: #555;
+}
+.clear {
+  clear: both;
+}
+p {
+ margin: 5px 0;
+}
+
+#container code {
+    background-color: #FAFAFA;
+    color: #272020;
+    padding: 15px;
+    display: block;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#content-wrapper h2 {
+    margin: 15px 0;
+    border-bottom: 1px solid;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* LTR CSS */
+#snav.en {
+  left: 0;
+  text-align: left;
+}
+#snav.en  li span {
+  left: -100px;
+}
+#snav.en li a:hover span {
+  left: 35px;
+}
+
+/* RTL CSS */
+#snav.ar {
+  right: 0;
+  text-align: right;
+}
+#snav.ar  li span {
+  right: -100px;
+}
+#snav.ar li a:hover span {
+  right: 35px;
+}
+
+/* main SideNav.css styles */
+#snav {
+  position: fixed;
+  top:20%;
+  z-index: 9999;
+  font-size: 18px;
+}
+#snav ul {
+  list-style: none;
+}
+#snav * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#snav li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+#snav .fa {
+  vertical-align: middle;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+#snav li span {
+  font-size: 15px;
+  vertical-align: middle;
+  height: 35px;
+  line-height: 35px;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  z-index: 3;
+}
+#snav li a:hover .fa {
+  transform: rotate(720deg);
+}
+#snav li a:hover span {
+  visibility: visible;
+}
+
+/* this colors styles */
+
+/* menu items title background used for browsers not supporting :nth-child */
+#snav li span {
+  background-color: #555;
+}
+/* icons color and background before hover  */
+#snav li .fa {
+  background-color: #EEE;
+  color: #555
+}
+/* icons hover color */
+#snav li a:hover .fa {
+  color: #fff;
+}
+/* repeated colors from 1 to 10 each hover color repeated after 10 menu items */
+#snav li:nth-child(10n+1) span, #snav li:nth-child(10n+1) a:hover .fa {
+  background-color: #8350DD;
+}
+#snav li:nth-child(10n+2) span, #snav li:nth-child(10n+2) a:hover .fa {
+  background-color: #4EC5DB;
+}
+#snav li:nth-child(10n+3) span, #snav li:nth-child(10n+3) a:hover .fa {
+  background-color: #3DC25D;
+}
+#snav li:nth-child(10n+4) span, #snav li:nth-child(10n+4) a:hover .fa {
+  background-color: #99BE24;
+}
+#snav li:nth-child(10n+5) span, #snav li:nth-child(10n+5) a:hover .fa {
+  background-color: #38c;
+}
+#snav li:nth-child(10n+6) span, #snav li:nth-child(10n+6) a:hover .fa {
+  background-color: #ff0000;
+}
+#snav li:nth-child(10n+7) span, #snav li:nth-child(10n+7) a:hover .fa {
+  background-color: #000;
+}
+#snav li:nth-child(10n+8) span, #snav li:nth-child(10n+8) a:hover .fa {
+  background-color: #F1A111;
+}
+#snav li:nth-child(10n+9) span, #snav li:nth-child(10n+9) a:hover .fa {
+  background-color: #777;
+}
+#snav li:nth-child(10n+10) span, #snav li:nth-child(10n+10) a:hover .fa {
+  background-color: #30555C;
+}
