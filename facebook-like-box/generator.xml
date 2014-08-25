@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
 
-<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="3iranek@gmail.com" thumbnail="https://lh3.googleusercontent.com/-oci927046Rk/U_s8UnnRmbI/AAAAAAAAEh0/PCZW8yLC-5o/h120/facebook-like-box.png" screenshot="https://lh4.googleusercontent.com/-C6Z5GI-EE8U/U_s9NRgTS8I/AAAAAAAAEh8/CXJzK8Vo-bU/h1600/fabook-like-box-screenshoot.png" author_location="Egypt" height="auto">
+<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="3iranek@gmail.com" thumbnail="https://lh3.googleusercontent.com/-oci927046Rk/U_s8UnnRmbI/AAAAAAAAEh0/PCZW8yLC-5o/h120/facebook-like-box.png" screenshot="https://lh4.googleusercontent.com/-C6Z5GI-EE8U/U_s9NRgTS8I/AAAAAAAAEh8/CXJzK8Vo-bU/h1600/fabook-like-box-screenshoot.png" author_location="Egypt" height="nn">
 	<Require feature="dynamic-height"/>
     <Require feature="opensocial-0.7"/>
     <Require feature="google.blog"/>
@@ -34,7 +34,7 @@
     var prefs = new gadgets.Prefs();
     var element = document.getElementById('like_box');
 
-    // user var
+	// user var
     var url = prefs.getString("url");
     var style = prefs.getString("style");
     var height = prefs.getString("height");
@@ -43,6 +43,7 @@
     var html = '';
     html += '<iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/likebox.php?href=' + url + '&width=340px&height=' + height + 'px&colorscheme=' + style + '&show_faces=true&header=false&stream=false&show_border=false&appId=492409184153294" style="border:none; overflow:hidden; width:100%; height:' + height + 'px;"></iframe>';
     element.innerHTML = html;
+    gadgets.window.adjustHeight();
 
   </script>
 
