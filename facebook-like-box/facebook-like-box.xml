@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
 
-<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="mido.ghranek@yahoo.com" thumbnail="" screenshot="" author_location="Egypt" height="200">
+<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="mido.ghranek@yahoo.com" thumbnail="" screenshot="" author_location="Egypt">
 <Require feature="dynamic-height"/>
 <Require feature="opensocial-0.7"/>
 <Require feature="google.blog"/>
@@ -16,16 +16,27 @@
   </UserPref> 
 <UserPref name="height" display_name="Box Height" default_value="280" />
 <Content type="html">
+		
+	<iframe id="like_box" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:'+height+'px;"></iframe>
+	
   <![CDATA[
 
 
   <script type="text/javascript">
 
+var prefs = new gadgets.Prefs();
+var element = document.getElementById('like_box');
 var url = prefs.getString("url");
-var style = prefs.getString("style");
-var height = prefs.getString("height");
+var styleLD = prefs.getString("style");
 
-document.write('<iframe allowtransparency="true" frameborder="0" scrolling="no" src="//www.facebook.com/plugins/likebox.php?href='+url+'&width=340px&height='+height+'px&colorscheme='+style+'&show_faces=true&header=false&stream=false&show_border=false&appId=492409184153294" style="border:none; overflow:hidden; width:100%; height:'+height+'px;"></iframe>');
+element.style.border="none";
+element.style.overflow="hidden";
+element.style.width="100%";
+element.style.height=prefs.getString("height");
+
+var srcL = '//www.facebook.com/plugins/likebox.php?href=' + url + '&width=340px&height=280px&colorscheme=' + styleLD + '&show_faces=true&header=false&stream=false&show_border=false&appId=492409184153294";
+
+element.src=srcL;
 
    </script>
 
