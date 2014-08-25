@@ -14,7 +14,7 @@
     <EnumValue value="light" />
     <EnumValue value="dark" />
   </UserPref> 
-<UserPref name="height" display_name="Box Height" default_value="280" />
+<UserPref name="height" display_name="Box Height" default_value="258" />
 	
 <Content type="html">	
   <![CDATA[
