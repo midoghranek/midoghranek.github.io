@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
 
-<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="mido.ghranek@yahoo.com" thumbnail="" screenshot="" author_location="Egypt"/>
+<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="mido.ghranek@yahoo.com" thumbnail="" screenshot="" author_location="Egypt">
+	<Require feature="dynamic-height"/>
+    <Require feature="opensocial-0.7"/>
+    <Require feature="google.blog"/>
+    <Require feature="skins"/>
+    <Require feature="views"/>
+</ModulePrefs>
 	
   <UserPref name="url" display_name="Facebook Page URL" required="true" />
   <UserPref name="style" display_name="Widget style" default_value="light" datatype="enum" >
