@@ -17,7 +17,7 @@
 <UserPref name="height" display_name="Box Height" default_value="280" />
 <Content type="html">
 		
-	<iframe id="like_box" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:'+height+'px;"></iframe>
+	<iframe id="like_box" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
 	
   <![CDATA[
 
