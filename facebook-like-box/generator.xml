@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
 
-<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="3iranek@gmail.com" thumbnail="https://lh3.googleusercontent.com/-oci927046Rk/U_s8UnnRmbI/AAAAAAAAEh0/PCZW8yLC-5o/h120/facebook-like-box.png" screenshot="https://lh4.googleusercontent.com/-C6Z5GI-EE8U/U_s9NRgTS8I/AAAAAAAAEh8/CXJzK8Vo-bU/h1600/fabook-like-box-screenshoot.png" author_location="Egypt" height="280">
-	<Optional feature="dynamic-height"/>
+<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="3iranek@gmail.com" thumbnail="https://lh3.googleusercontent.com/-oci927046Rk/U_s8UnnRmbI/AAAAAAAAEh0/PCZW8yLC-5o/h120/facebook-like-box.png" screenshot="https://lh4.googleusercontent.com/-C6Z5GI-EE8U/U_s9NRgTS8I/AAAAAAAAEh8/CXJzK8Vo-bU/h1600/fabook-like-box-screenshoot.png" author_location="Egypt" height="auto">
+	<Require feature="dynamic-height"/>
     <Require feature="opensocial-0.7"/>
     <Require feature="google.blog"/>
     <Require feature="skins"/>
