@@ -10,15 +10,12 @@
   </UserPref> 
 <UserPref name="height" display_name="Box Height" default_value="280" />
 	
-<Content type="html">
-	
-	   <div id="like_box"></div>
-	
+<Content type="html">	
   <![CDATA[
-
+  
+  	   <div id="like_box"></div>
 
   <script type="text/javascript">
-
 var prefs = new gadgets.Prefs();
 var element = document.getElementById('like_box');
 var url = prefs.getString("url");
