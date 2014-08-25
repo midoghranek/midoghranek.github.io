@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+
+<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="mido.ghranek@yahoo.com" thumbnail="" screenshot="" author_location="Egypt" height="200">
+<Require feature="dynamic-height"/>
+<Require feature="opensocial-0.7"/>
+<Require feature="google.blog"/>
+<Require feature="skins"/>
+<Require feature="views"/>
+</ModulePrefs>
+
+  <UserPref name="url" display_name="Facebook Page URL" required="true" />
+  <UserPref name="style" display_name="Widget style" default_value="light" datatype="enum" >
+    <EnumValue value="light" />
+    <EnumValue value="dark" />
+  </UserPref> 
+<UserPref name="height" display_name="Box Height" default_value="280" />
+<Content type="html">
+  <![CDATA[
+
+
+  <script type="text/javascript">
+
+var url = prefs.getString("url");
+var style = prefs.getString("style");
+var height = prefs.getString("height");
+
+document.write('<iframe allowtransparency="true" frameborder="0" scrolling="no" src="//www.facebook.com/plugins/likebox.php?href='+url+'&width=340px&height='+height+'px&colorscheme='+style+'&show_faces=true&header=false&stream=false&show_border=false&appId=492409184153294" style="border:none; overflow:hidden; width:100%; height:'+height+'px;"></iframe>');
+
+   </script>
+
+  ]]>
+  </Content>
+</Module>
