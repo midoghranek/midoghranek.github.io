@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
 
-<ModulePrefs title="Facebook Like Box" author="Mohamed Abo El-Ghranek" description="Get your facebook page on blogger" author_email="3iranek@gmail.com" thumbnail="https://lh3.googleusercontent.com/-oci927046Rk/U_s8UnnRmbI/AAAAAAAAEh0/PCZW8yLC-5o/h120/facebook-like-box.png" screenshot="https://lh4.googleusercontent.com/-C6Z5GI-EE8U/U_s9NRgTS8I/AAAAAAAAEh8/CXJzK8Vo-bU/h1600/fabook-like-box-screenshoot.png" author_location="Egypt" height="nn">
+<ModulePrefs title="Facebook Like Box" author="SweetTheme" description="Get your facebook page on blogger" author_email="sweethemecontact@gmail.com" thumbnail="https://lh5.googleusercontent.com/-A-Sclj1ijy8/U_vsfQikJ8I/AAAAAAAAEiM/cXeQ3m_iD8w/h1600/48.png" screenshot="https://lh4.googleusercontent.com/-C6Z5GI-EE8U/U_s9NRgTS8I/AAAAAAAAEh8/CXJzK8Vo-bU/h1600/fabook-like-box-screenshoot.png" author_location="Egypt" height="nn">
 	<Require feature="dynamic-height"/>
     <Require feature="opensocial-0.7"/>
     <Require feature="google.blog"/>
@@ -24,10 +24,10 @@
   <script type="text/javascript">
 
   /*
-   * facebook like box widget for blogger.com
-   * Author Name: Mohamed Abo El-Ghranek 
+   * Facebook like box widget for blogger.com
+   * Author Name: SweetTheme
    * Date: 25/8/2014 
-   * URL: fb.com/midoghranek 
+   * URL: http://www.sweethemes.com
    */
 
     // Main var 
