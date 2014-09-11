@@ -1,0 +1,121 @@
+.contents {
+border-top: 1px solid #111;
+padding-top: 15px;
+margin: 20px 0;
+}
+
+p.copy {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 35px;
+    text-decoration: underline;
+    font-style: italic;
+    color: #888;
+    font-size: 16px;
+}
+
+.borderTop {
+width: 60%;
+}
+
+#toc {
+margin-bottom: 25px;
+float: right;
+width: 100%;
+background-color: #38C;
+}
+
+#toc ul {
+display: inline-block;
+padding: 0;
+}
+
+#toc li a {
+padding: 13px 15px;
+background-color: #38C;
+color: #FFF;
+}
+
+#toc li a:hover {
+background-color: #111;
+}
+
+#toc li {
+list-style: none;
+display: inline-block;
+float: right;
+}
+
+
+body {
+background-color: #EEE;
+font-family: 'Droid Arabic Kufi' cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+a {
+text-decoration: none;
+color: #EB4A4A;
+}
+
+* {
+transition: all 1s ease;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+}
+
+
+#container {
+overflow: hidden;
+max-width: 1000px;
+margin: 0 auto;
+width: 97%;
+background-color: #FFF;
+padding-bottom: 35px;
+margin-top: 25px;
+position: relative;
+border-bottom: 3px solid #EC6464;
+}
+
+h.main-title {
+line-height: 5em;
+font-size: 1.5em;
+background-color: #EC6464;
+color: #FFF;
+display: block;
+text-align: center;
+padding: 15px 0;
+}
+
+
+
+::-moz-selection {
+    background-color: #F60;	
+	color: #fff;
+}
+::selection {
+	background-color: #F60;
+	color: #fff;		
+}
+
+img {
+max-width: 100%;
+margin: 15px auto;
+display: block;
+border: 2px solid #999;
+}
+#content-wrapper {
+margin: 0 20px;
+}
+
+pre {
+background-color: #222;
+direction: ltr;
+text-align: left;
+color: #FFF;
+padding: 25px 20px;
+border-left: 25px solid #FC2929;
+}
