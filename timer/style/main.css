@@ -1,0 +1,35 @@
+* {
+transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+::-moz-selection {
+background-color: #111;
+color: #fff;
+}
+::selection {
+background-color: #111;
+color: #fff;
+}
+a {
+    color: #D00;
+    text-decoration: none;
+}
+a:hover {
+    color: #38c;
+}
+.clear { 
+    clear: both;
+}
+body {
+    background-color:#EDEDED;
+}
+
+#content-wrapper {
+    width: 800px;
+    margin: 0 auto;
+	background-color: #F0F0F0;
+    border: 1px solid #C4CDE0;
+    padding: 50px;
+}
