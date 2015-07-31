@@ -4,6 +4,12 @@ body {
 	font-family: Greta;
 }
 
+p.small {
+    font-size: 13px;
+    color: #777;
+    margin-top: 27px;
+}
+
 input.text {
     background-color: #FFF;
     border: 0;
