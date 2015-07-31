@@ -3,7 +3,7 @@
 $('.submit').click(function() { 
     var url = window.location.href; 
     var id_val = $('input.text').val();
-    var new_url = url + 'ids/' + id_val;
+    var new_url = url + 'ids/' + id_val + '/';
     $.ajax({
       url: new_url,
         type:'GET',
