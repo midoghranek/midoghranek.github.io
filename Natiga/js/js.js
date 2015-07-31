@@ -1,12 +1,24 @@
 // custom javascript
 
+$('.submit').click(function() { 
+    var url = window.location.href; 
+    var id_val = $('input.text').val();
+    var new_url = url + 'ids/' + id_val;
+    $.ajax({
+      url: new_url,
+        type:'GET',
+        success: function(data){
+           $('body').append($(data).find('body').html());
+        }
+    });
+});
+
 /* $('.submit').click(function() { 
     var url = window.location.href; 
     var id_val = $('input.text').val();
     var new_url = url + 'id/' + id_val;
     $('body').append('<a href="' + new_url + '">link</a>');
 });
-*/
 
 $('.submit').click(function() { 
     var url = window.location.href; 
@@ -15,7 +27,19 @@ $('.submit').click(function() {
     $.get(new_url, function (data) { 
       $('body').append('<div>'+$(data).find('body').html()+'</div>');    
     },"html");
+	
+$.ajax({
+    url: new_url,
+        type:'GET',
+        success: function(data){
+           $('body').append($(data).find('body').html());
+        }
 });
+
+});
+
+*/
+
 
 
 
