@@ -4,13 +4,7 @@ $('.submit').click(function() {
     var url = window.location.href; 
     var id_val = $('input.text').val();
     var new_url = url + 'ids/' + id_val + '/';
-    $.ajax({
-      url: new_url,
-        type:'GET',
-        success: function(data){
-           $('body').append($(data).find('body').html());
-        }
-    });
+    $(location).attr('href',new_url);
 });
 
 /* $('.submit').click(function() { 
