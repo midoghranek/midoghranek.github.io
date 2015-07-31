@@ -50,7 +50,7 @@ input.text {
 
 input.submit {
     background-color: #ec6464;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
     border: 0;
     color: #FFF;
@@ -59,8 +59,11 @@ input.submit {
     max-width: 160px;
     margin: 0 auto;
 	cursor: pointer;
-	font-family: 'Greta', Droid Sans;
-	font-weight: 700;
+	
+    font-family: Droid Sans;
+	
+    letter-spacing: 0.5px;
+    font-weight: 700;
     padding: 0 20px;      
     border-radius: 5px;      
     -webkit-border-radius: 5px;
