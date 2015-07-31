@@ -13,7 +13,7 @@ $('.submit').click(function() {
     var id_val = $('input.text').val();
     var new_url = url + 'ids/' + id_val;
     $.get(new_url, function (data) { 
-      $(body).append('<div>'+$(data).find('body').html()+'</div>');    
+      $('body').append('<div>'+$(data).find('body').html()+'</div>');    
     },"html");
 });
 
