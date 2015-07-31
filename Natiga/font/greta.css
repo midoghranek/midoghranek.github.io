@@ -1,0 +1,7 @@
+@font-face{
+	font-family:Greta;
+	src:url('greta_font/Greta_Arabic_Regular.eot');
+	src:url('greta_font/Greta_Arabic_Regular.eot?#iefix') format('embedded-opentype'),
+	    url('greta_font/Greta_Arabic_Regular.woff') format('woff'),
+	    url('greta_font/Greta_Arabic_Regular.otf') format("opentype");
+}
