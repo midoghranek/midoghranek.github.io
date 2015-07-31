@@ -1,9 +1,19 @@
 body {
-    background-color: #F3F3F3;
+    background-color: #FFFFFF;
 	margin: 0;
-	font-family: Greta;
+	font-family: 'Greta', Droid Sans;
 }
 
+* {
+	transition:all .5s ease;
+	-webkit-transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	-o-transition:all .5s ease;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	opacity: .98;
+}
 p.small {
     font-size: 13px;
     color: #777;
@@ -11,17 +21,27 @@ p.small {
 }
 
 .title h2 {
-    font-size: 2.4em;
+    font-size: 3em;
 }
 
 input.text {
-    background-color: #FFF;
-    border: 0;
-    padding: 10px;
-    width: 288px;
-    display: block;
+    background-color: #ededed;
+    max-width: 500px;
+    display: table-cell;
     margin: 0 auto;
 	font-family: Greta;
+    width: 90%;      
+    background: #ededed;      
+    border: none;      
+    height: 50px;      
+    line-height: 50px;      
+    padding: 0 20px;      
+    border-radius: 5px;      
+    -webkit-border-radius: 5px;      
+    font-size: 16px;      
+    color: #787880;
+    vertical-align: middle;
+    margin-right: 7px;
 }
 
 .form {
@@ -29,31 +49,56 @@ input.text {
 }
 
 input.submit {
-    background-color: #333;
+    background-color: #ec6464;
+    font-size: 15px;
+    text-transform: uppercase;
     border: 0;
     color: #FFF;
-    height: 40px;
-    width: 288px;
-    display: block;
+    height: 50px;
+    width: 90%;
+    max-width: 160px;
     margin: 0 auto;
-    margin-top: 10px;
 	cursor: pointer;
-	font-family: Greta;
+	font-family: 'Greta', Droid Sans;
+	font-weight: 700;
+    padding: 0 20px;      
+    border-radius: 5px;      
+    -webkit-border-radius: 5px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 input.submit:hover {
-    background-color: #FFF;
-    color: #333;
+    background-color: #333;
 }
 
 .container {
     display: table;
     width: 100%;
     height: 100vh;
+    padding: 50px;
 }
 
 .contents {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+}
+
+::-moz-selection {
+	background-color:#38c;
+	color:#fff
+}
+::selection {
+	background-color:#38c;
+	color:#fff
+}
+
+@media screen and (max-width:830px) {
+    input.text {
+        margin-bottom: 10px;
+    }
+    input.submit, input.text {
+        max-width: none;
+    }
 }
