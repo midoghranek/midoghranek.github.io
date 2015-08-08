@@ -1,0 +1,3 @@
+// custom javascript
+
+$('.youtube').moderntube();

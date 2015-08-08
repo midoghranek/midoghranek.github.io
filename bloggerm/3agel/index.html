@@ -1,0 +1,107 @@
+<html>
+
+<head>
+
+<title>Social Icon Widget Generator</title>
+
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+
+<link rel="stylesheet" href="font/greta.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel='stylesheet' href='css/spectrum.css' />
+<link rel='stylesheet' href='font/font-awesome/css/font-awesome.min.css' />
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<div class="contents">
+
+<div class="title">
+</div>
+
+<div class="form">
+	<div id="gene">
+	
+		<div class="inpto">
+		    <i class="fa fa-css3"></i>
+			<select name="">
+			  <option value="" hidden>choose style</option>
+			  <option value="style1">style 1</option>
+			  <option value="style2">style 2</option>
+			  <option value="style3">style 3</option>
+			</select>
+		</div>
+		
+		<div class="inpto namey">
+			<div class="namehash"><a target="_blank" href="http://fontawesome.io/icons/">Get One</a></div>
+			<i class="fa fa-slack"></i>
+		    <input type="text" class="text iname"  value="" placeholder="Icon Name">
+		</div>
+		<div class="customy">
+		   <div class="namehash"><a target="_blank" href="http://brandcolors.net/">Get One</a></div>
+		   <input type="text" class="text icolor_custom" value="" placeholder="Custom Icon Color"> 
+		</div>
+		<div class="inpto">
+		  <i class="fa fa-sort-numeric-asc"></i>
+		  <input type="text" class="text ifollower" value="" placeholder="Followers number">
+		</div>
+		<div class="inpto">
+		  <i class="fa fa-file-text-o"></i>
+		  <input type="text" class="text itext" value="" placeholder="Followers Text"> 	
+        </div>
+		<div class="inpto">
+		  <i class="fa fa-link"></i>		
+		  <input type="url" class="text iurl" value="" placeholder="Social URL">
+		</div>
+		<input type="submit" class="submit" value="Add Icon"> 
+	</div>
+</div>
+
+<div class="side">
+<div class="result" style="display:none">
+<style></style>
+<ul id="social"></ul>
+</div>
+
+  <form method="post" action="https://www.blogger.com/add-widget" target="_blank">
+  <input type="hidden" name="infoUrl" value="http://www.picalica.com/u/midoghranek/"/>
+  <input type="hidden" name="logoUrl" value="//a.disquscdn.com/1438733113/images/noavatar92.png"/>
+  <input type="hidden" name="widget.title" value="Social Counter Widget"/>
+  <textarea class="textom" name="widget.content" style="display:none;">
+	  <!-- social icon Widget -->
+  </textarea>
+  <input type="hidden" name="widget.template" value="
+	&lt;b:includable id=&#39;main&#39;&gt;
+	  &lt;!-- Social Widget icons for blogger by Mohamed Abo Elghranek --&gt;
+	  &lt;b:if cond=&#39;data:title != &quot;&quot;&#39;&gt;
+		&lt;h2 class=&#39;title&#39;&gt;&lt;data:title/&gt;&lt;/h2&gt;
+	  &lt;/b:if&gt;
+	  &lt;div class=&#39;widget-content&#39;&gt;
+		&lt;data:content/&gt;
+	  &lt;/div&gt;
+	&lt;/b:includable&gt;
+  " />
+  <input type="submit" class="button" name="go" style="display:none" value="Add social widget to Blogger"/>
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src='js/spectrum.js'></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,111 @@
+body {
+	margin: 0;
+	font-family: 'Greta', Droid Sans;
+    background-image: url(http://img10.deviantart.net/58ba/i/2015/115/f/5/wallpaper_by_heeartbreaktutorials-d8r06o5.jpg);      
+	background-repeat: no-repeat;      
+	background-size: cover;
+	color: #FFF;
+}
+
+* {
+	transition:all .5s ease;
+	-webkit-transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	-o-transition:all .5s ease;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	opacity: .98;
+}
+p.small {
+    font-size: 13px;
+    color: #777;
+    margin-top: 27px;
+}
+
+.title h2 {
+    font-size: 3em;
+}
+
+input.text {
+    background-color: #ededed;
+    max-width: 500px;
+    display: table-cell;
+    margin: 0 auto;
+	font-family: Greta;
+    width: 90%;      
+    background: #ededed;      
+    border: none;      
+    height: 50px;      
+    line-height: 50px;      
+    padding: 0 20px;      
+    border-radius: 5px;      
+    -webkit-border-radius: 5px;      
+    font-size: 16px;      
+    color: #787880;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.form {
+    margin-top: 25px;
+}
+
+input.submit {
+    background-color: #ec6464;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 0;
+    color: #FFF;
+    height: 50px;
+    width: 90%;
+    max-width: 160px;
+    margin: 0 auto;
+	cursor: pointer;
+	
+    font-family: Droid Sans;
+	
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding: 0 20px;      
+    border-radius: 5px;      
+    -webkit-border-radius: 5px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input.submit:hover {
+    background-color: #333;
+}
+
+.container {
+    display: table;
+    width: 100%;
+    background: url(http://4.bp.blogspot.com/-xaSAYDTCql4/U1AO14YolTI/AAAAAAAAD94/Lenz-oZ0o2c/s1600/pattern-1.png) rgba(0, 0, 0, 0.42);
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.contents {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+::-moz-selection {
+	background-color:#38c;
+	color:#fff
+}
+::selection {
+	background-color:#38c;
+	color:#fff
+}
+
+@media screen and (max-width:830px) {
+    input.text {
+        margin-bottom: 10px;
+    }
+    input.submit, input.text {
+        max-width: none;
+    }
+}
