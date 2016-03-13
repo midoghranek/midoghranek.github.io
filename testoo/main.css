@@ -1,0 +1,143 @@
+body {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300px;
+    backface-visibility: visible;
+    background-image: url(http://comestiblesf.com/wp-content/uploads/2014/01/website-background-image-e1390793582580.jpg);
+}
+
+header {
+    padding: 20px 0;
+}
+
+header .row,footer .row {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 800;
+    margin: 40px;
+    color: #e8b7b7;
+    font-stretch: expanded;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(36, 0, 0, 0.6);
+}
+
+p {
+    color: #eff1f2;
+    font-size: 50px;
+}
+
+a {
+    color: #80acd3;
+    font-size-adjust: auto;
+    font-size: 20px;
+}
+
+header p {
+    padding: 0 20px;
+    margin: 0;
+    color: #916060;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-image: url(https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #efdddd;
+    height: 600px;
+    text-shadow: .25px .25px .25px #fff5f5;
+}
+
+.jumbotron h2 {
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0;
+    color: rgba(250, 0, 250, 0.81);
+}
+
+.jumbotron h3 {
+    margin: 0 0 20px;
+    color: #EAEAEA;
+    text-decoration: blink;
+    padding: inherit;
+}
+
+section .row img {
+    margin: 0 0 30px;
+    width: 100%;
+}
+
+.col-md-6 {
+    margin: 0 0 30px;
+    color: #f0f8ff;
+}
+
+.btn.btn-primary {
+    border-radius: 2px;
+    border: 0;
+    color: #1f0305;
+    text-shadow: none;
+    background-color: #F8FCFF;
+}
+
+.btn.btn-primary:hover {
+    color: #bf3c3c;
+    background-color: #eac2c6;
+}
+
+.btn-secondary {
+    background-color: #ce4f5c;
+    color: #fff;
+    margin: 0 0 30px;
+}
+
+footer {
+    font-size: 22px;
+    padding: 20px 0;
+    background-color: #f41313;
+}
+
+footer .col-sm-8 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li img {
+    width: 32px;
+    height: 32px;
+}
+
+#rightImage {
+    width: 275px;
+    height: 275px;
+    float: left;
+    position: relative;
+}
+
+.mouseOver {
+    width: 300px;
+    height: 300px;
+    top: -40px;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 2px -2px 10px 3px #888,inset 2px -2px 10px 3px #888;
+}
+
+.mouseOut {
+    width: 275px;
+    height: 275px;
+    float: left;
+    margin-right: 52px;
+    box-shadow: 2px -2px 10px 3px #888,inset 2px -2px 10px 3px #888;
+}
